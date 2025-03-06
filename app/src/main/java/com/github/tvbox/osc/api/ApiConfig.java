@@ -161,7 +161,7 @@ public class ApiConfig {
     }
     private String TempKey = null;
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://gitee.com/chenlong622/LIVE/raw/main/long.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
